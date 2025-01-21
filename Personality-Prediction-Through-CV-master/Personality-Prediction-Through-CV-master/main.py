@@ -154,8 +154,8 @@ def perdict_person():
     l8=Label(top, text="How much would you like work with your peers(Agreeableness)", foreground='white', bg='black').place(x=70, y=340)
     l9=Label(top, text="How outgoing and social interaction you like(Extraversion)", foreground='white', bg='black').place(x=70, y=370)
     
-    sName=Entry(top)
-    sName.place(x=450, y=130, width=160)
+    user_Name=Entry(top)
+    user_Name.place(x=450, y=130, width=160)
     age=Entry(top)
     age.place(x=450, y=160, width=160)
     gender = IntVar()
@@ -190,7 +190,7 @@ def perdict_person():
 
 def OpenFile(b4):
     global loc;
-    name = filedialog.askopenfilename(initialdir="C:/Users/Batman/Documents/Programming/tkinter/",
+    name = filedialog.askopenfilename(initialdir=" ",
                             filetypes =(("Document","*.docx*"),("PDF","*.pdf*"),('All files', '*')),
                            title = "Choose a file."
                            )
